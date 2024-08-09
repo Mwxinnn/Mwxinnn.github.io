@@ -1,16 +1,21 @@
 {{ define "main" -}}
 <h1 class="title">{{ .Title }}</h1>
-<ul class="entries">
-    {{ range .Pages }}
-    <h2 style="text-align: center;">
-        <a color href="{{ .RelPermalink }}" style="color: var(--text-color);">{{ .Title }}</a>
-    </h2>
-        <span class="published" style="text-align: center;" style="color: #4e4e4e;">
-            <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
-        </span>
-    <p style="color: #8b8a8a;">{{ .Params.description }}</p>
+<div class="post">{{ .Content }}</div>
 
-    {{if not .Params.ignore_pages}}
+<ul class="entries">
+    {{ $pages := .Pages }}
+    {{ $sortedPages := sort $pages "Params.priority"}}
+    {{ range $sortedPages}}
+
+    {{if ne .Params.layout "single"}}
+    <h2 style="text-align: center;">
+        <p style="color: var(--text-color);">{{ .Title }}</p>
+    </h2>
+    <span class="published" style="text-align: center;" style="color: #4e4e4e;">
+        <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
+    </span>
+    <p style="color: #8b8a8a;">{{ .Params.description }}</p>
+    <a color href="{{ .RelPermalink }}" style="color: var(--text-color);"> Overview </a>
     {{ range .Pages }}
     <li>
         <span class="title">
@@ -21,7 +26,26 @@
         </span>
     </li>
     {{ end }}
+
+    {{else}}
+    <h2 style="text-align: center;">
+        <a color href="{{ .RelPermalink }}" style="color: var(--text-color);">{{ .Title }}</a>
+    </h2>
+    <span class="published" style="text-align: center;" style="color: #4e4e4e;">
+        <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
+    </span>
+    <p style="color: #8b8a8a;">{{ .Params.description }}</p>
     {{ end }}
     {{ end }}
 </ul>
+
+<div class="post">
+    {{ if (.Site.Params.listmonk) }}
+    {{ partial "post/listmonk_email_newsletters.html" . }}
+    {{ end }}
+    {{ partial "post/navigation.html" . }}
+    {{ if or (.Site.Params.remark42) (.Site.DisqusShortname) }}
+    {{ partial "post/comments.html" . }}
+    {{ end }}
+</div>
 {{ end }}

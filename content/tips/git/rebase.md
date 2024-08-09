@@ -1,7 +1,7 @@
 ---
 title: Rebase
 layout: single
-hideToc: true
+hideToc: false
 date: 2024-08-08
 ---
 ## Rebase

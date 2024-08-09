@@ -2,8 +2,9 @@
 title: 🗒️ Git/GitHub Tips
 layout: single
 date: 2024-08-08
-description: This list includes basic git commands which are widely used in daily programming life, including change track, branch operations, and github management.
-ignore_pages: true
+description: This list contains fundamental Git commands commonly used in everyday programming, covering tasks such as change tracking, branch operations, and remote management.
+ignore_sub_pages: true
+priority: 5
 ---
 # 
 Git is a distributed version control system widely used for tracking changes in source code during software development. Below are the basic commands and concepts to get started with Git:
@@ -62,9 +63,11 @@ git merge <source_branch>
 [Details about Rebase]({{< relref "/tips/git/rebase.md">}})
 
 ### Conflit Handling 
-[Handling Conflict during Merge and Rebase]({{< relref "/tips/git/rebase.md">}})
+[Handling Conflict]({{< relref "/tips/git/ConflictHandling.md">}})
 
 ## Remote Repositories
+Before starting operating the remote repository, one should notice that the remote repository and local repository are two different repositories. They may have different commits and branches. One should setup which remote branch to track (which is set to `origin/main` by default), and track that branch manually by commands such as `push` and `pull`.
+
 ### Add a Remote
 A remote server should be specified before the first push.  
 ```bash
@@ -76,7 +79,7 @@ It adds a **reference** to a remote repository named `name`. This is typically u
 ```bash
 git push <remote_name> <branch_name> # It uploads your local commits to the remote repository.
 ```
-`remote_name`: The name of the remote repository to which you want to push your changes (default: `origin`).
+`remote_name`: The name of the remote repository to which you want to push your changes (default: `origin`).\
 `branch_name`: The name of the local branch you want to push to the remote repository.
 
 For the first push:
