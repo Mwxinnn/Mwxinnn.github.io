@@ -1,4 +1,8 @@
 {{ define "main" -}}
+    {{ with .GetPage `about.md` }}
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ end }}
 <div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}

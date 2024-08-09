@@ -3,21 +3,21 @@
 <ul class="entries">
     {{ range .Pages }}
     <h2 style="text-align: center;">
-        <a color href="{{ .RelPermalink }}" style="color: #FFF;">{{ .Title }}</a>
+        <a color href="{{ .RelPermalink }}" style="color: var(--text-color);">{{ .Title }}</a>
     </h2>
-        <span class="published" style="text-align: center;">
+        <span class="published" style="text-align: center;" style="color: #4e4e4e;">
             <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
         </span>
-    <p style="color: #b4b4b4;">{{ .Params.description }}</p>
+    <p style="color: #8b8a8a;">{{ .Params.description }}</p>
 
     {{if not .Params.ignore_pages}}
     {{ range .Pages }}
     <li>
         <span class="title">
-            <a href="{{ .RelPermalink }}" style="color: #848484;">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" style="color: #626262;">{{ .Title }}</a>
         </span>
         <span class="published">
-            <time class="pull-right post-list" style="color: #848484;">{{ .Date | time.Format ":date_long" }}</time>
+            <time class="pull-right post-list" style="color: #626262;">{{ .Date | time.Format ":date_long" }}</time>
         </span>
     </li>
     {{ end }}
