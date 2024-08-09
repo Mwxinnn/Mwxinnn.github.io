@@ -1,4 +1,4 @@
 ---
-title: Lectures
+title: DL Tips
 layout: single
 ---

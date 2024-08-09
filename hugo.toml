@@ -2,15 +2,15 @@ baseURL = '/'
 languageCode = 'en-us'
 title = "MWX's Site"
 theme = 'poison'
-pluralizelisttitles = false
+# pluralizelisttitles = false
 
 [params]
 brand = "Wenxin Ma"
 # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-# brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
+brand_image = "/pic/profile.jpg"    # path to the image shown in the sidebar
 description = "Meow Meow" # Used as default meta description if not specified in front matter
 dark_mode = true                      # optional - defaults to false
-# favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+favicon = "/pic/favicon.png"             # path to favicon (defaults to favicon.png)
 
 # front_page_content = [] # Equivalent to the default value, add page bundle names to include them on the front page.
 
@@ -21,8 +21,8 @@ dark_mode = true                      # optional - defaults to false
     # HasChildren:  If the directory's files should be listed.  Default is true.
     # Limit:        If the files should be listed, how many should be shown.
 menu = [
-    {Name = "About", URL = "/about/", HasChildren = false},
-    {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+    {Name = "About Me", URL = "/about/", Pre = "💅 Little Self-Introduction",HasChildren = true, Limit = 5},
+    {Name = "Tips", URL = "/tips/", Pre = "🖊️ Little Tips and Reminders", HasChildren = false},
     # {Name = "Lectures", URL = "/posts/Lectures", Pre = "Recent", HasChildren = true, Limit = 5},
 ]
 

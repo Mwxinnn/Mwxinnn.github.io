@@ -1,4 +1,4 @@
 ---
-title: Posts
+title: Pytorch Tips
 layout: list
 ---

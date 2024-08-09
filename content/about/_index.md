@@ -1,8 +1,7 @@
 ---
-title: About
+title: About Me
 layout: single
 ---
 
-# About Me
-
+<!-- # About Me -->
 how are you

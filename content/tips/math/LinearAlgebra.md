@@ -1,5 +1,5 @@
 ---
-title: Meow2
+title: Linear Algebra
 hideToc: false
 ---
 

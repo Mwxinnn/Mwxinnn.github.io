@@ -6,19 +6,34 @@
     <description>Recent content on MWX&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Meow</title>
-      <link>//localhost:1313/posts/cat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/cat/</guid>
-      <description>Meow Hi&#xA;def Hello(): pass Google Lecture</description>
+      <title>Branch Management</title>
+      <link>//localhost:1313/tips/git/branchmanagement/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tips/git/branchmanagement/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Meow2</title>
-      <link>//localhost:1313/posts/lectures/cat/</link>
+      <title>Handling Conflict</title>
+      <link>//localhost:1313/tips/git/conflicthandling/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tips/git/conflicthandling/</guid>
+      <description>When attempting to merge a branch that results in conflicts, Git will output which files are in conflict. Checking the status of the repository, conflicted files will be marked with &amp;ldquo;both modified&amp;rdquo;. One need to manually edit the file to resolve conflicts by choosing which changes to keep or combining them.&#xA;To see conflict markers in files:&#xA;git diff After resolving the conflicts in the file, add the resolved file to the staging area and complete the merge by committing the changes.</description>
+    </item>
+    <item>
+      <title>Rebase</title>
+      <link>//localhost:1313/tips/git/rebase/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tips/git/rebase/</guid>
+      <description>Rebase Merge combines changes from one branch into another while preserving the history of both branches. It creates a new commit (a &amp;ldquo;merge commit&amp;rdquo;) that combines the changes from the two branches. The merge commit has two parent commits (one from each branch being merged). It maintains a complete history of changes and the context in which they were made.&#xA;Rebase reapplies commits from one branch on top of another, creating a linear history.</description>
+    </item>
+    <item>
+      <title>Linear Algebra</title>
+      <link>//localhost:1313/tips/math/linearalgebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/lectures/cat/</guid>
+      <guid>//localhost:1313/tips/math/linearalgebra/</guid>
       <description>Meow Hi yo</description>
     </item>
   </channel>
