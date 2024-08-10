@@ -39,7 +39,7 @@ body.layout-reverse .wrapper {
     }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 50em) {
 
     body>.wrapper,
     body.layout-reverse .wrapper {
