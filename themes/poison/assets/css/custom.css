@@ -1,1 +1,8 @@
 /* Empty css file that users can override in their own /assets/css/custom.css file */
+.text-presentation {
+    font-variant-emoji: text;
+}
+
+.emoji-presentation {
+    font-variant-emoji: emoji;
+}
