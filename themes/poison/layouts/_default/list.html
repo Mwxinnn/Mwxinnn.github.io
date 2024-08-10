@@ -6,7 +6,6 @@
     {{ $pages := .Pages }}
     {{ $sortedPages := sort $pages "Params.priority"}}
     {{ range $sortedPages}}
-
     {{if ne .Params.layout "single"}}
     <h2 style="text-align: center;">
         <p style="color: var(--text-color);">{{ .Title }}</p>
@@ -15,12 +14,18 @@
         <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
     </span>
     <p style="color: #8b8a8a;">{{ .Params.description }}</p>
-    <a color href="{{ .RelPermalink }}" style="color: var(--text-color);"> Overview </a>
-    {{ range .Pages }}
+    <!-- <a color href="{{ .RelPermalink }}" style="color: var(--text-color);"> Overview </a> -->
+    {{ range (sort .Pages "Params.priority")}}
     <li>
+        {{if ne .Params.layout "single"}}
         <span class="title">
-            <a href="{{ .RelPermalink }}" style="color: #626262;">{{ .Title }}</a>
+            <a href="{{ .Page.Parent.Permalink }}" style="color: #626262;">{{ .Title }}</a>
         </span>
+        {{else}}
+        <span class="title">
+            <a href="{{ .Permalink }}" style="color: #626262;">{{ .Title }}</a>
+        </span>
+        {{ end }}
         <span class="published">
             <time class="pull-right post-list" style="color: #626262;">{{ .Date | time.Format ":date_long" }}</time>
         </span>

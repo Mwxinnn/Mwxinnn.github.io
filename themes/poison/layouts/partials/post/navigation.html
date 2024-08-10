@@ -36,10 +36,23 @@
                 << Home</span></a>
     </div>
     {{ if ne .Page.Parent.Permalink .Site.BaseURL }}
+    {{if eq .Page.Parent.Params.layout "single"}}
     <div class="next-post">
         <a href="{{ .Page.Parent.Permalink }}"><span style="font-weight:bold;">
                 << Back to {{ .Page.Parent.Title }}</span></a>
     </div>
+    
+    {{else if eq .Page.Parent.Parent.Permalink .Site.BaseURL}}
+    <div class="next-post">
+        <a href="{{ .Page.Parent.Permalink }}"><span style="font-weight:bold;">
+                << Back to {{ .Page.Parent.Title }}</span></a>
+    </div>
+    {{else}}
+    <div class="next-post">
+        <a href="{{ .Page.Parent.Parent.Permalink }}"><span style="font-weight:bold;">
+                << Back to {{ .Page.Parent.Title }}</span></a>
+    </div>
+    {{ end }}
     {{ end }}
     {{ end }}
 </div>
