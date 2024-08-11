@@ -100,20 +100,16 @@ pre {
 }
 
 @media (max-width: 48em) {
-  .ul>*:not(.sidebar-nav) {
+  .sidebar-sticky>*:not(nav):not(.light-dark) {
     display: none;
     /* 隐藏目录之外的所有元素 */
   }
 
-  .ul>.sidebar-nav {
+  .sidebar-sticky>nav {
     display: block;
-    /* 确保目录显示 */
     font-size: 1rem;
-    /* 调整字体大小适应手机 */
-    padding: 0;
-    /* 移除多余的内边距 */
-    margin: 0;
-    /* 移除多余的外边距 */
+    top: 0;
+    transform: translate(0px, -20px);
   }
 }
 
