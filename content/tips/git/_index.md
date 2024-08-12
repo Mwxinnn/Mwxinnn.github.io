@@ -34,14 +34,36 @@ git status # This shows the current status of your working directory and staging
 git add <file_name> # This adds changes to the staging area. 
 git add . # We can use . to add all changes.
 ```
+> The staging area (also known as the index) in Git is an intermediate area where changes are stored before they are committed to the repository. It acts as a preparatory zone where you can group changes together and decide what will be included in the next commit.
+> When you make changes to files, they are initially tracked in the working directory. To include these changes in your next commit, you use the git add command, which moves them from the working directory to the staging area. Only the changes in the staging area are included in the next commit. This allows you to review and modify what you’re about to commit.
+
 ### Commit Changes
 ```bash
 git commit -m "Commit message" # It records changes in the repository with a descriptive message.
 ```
-#### View Commit History
+### View Commit History
 ```bash
 git log # It displays a log of all commits in the current branch.
 ```
+### Back to a Previous Commit
+To view or **temporarily** go back to a previous commit:
+```bash
+git checkout <commit-hash>
+```
+This command checks out the specific commit, putting your repository into a "detached HEAD" state, meaning you are not on any branch. This is useful for inspecting the code at that point in time, but any changes made won't be saved to a branch unless you create one.
+
+To undo a specific commit (i.e., **create a new commit** that undoes the changes from a previous commit):
+```bash
+git revert <commit-hash> # create a new commit that reverses the changes
+```
+
+To **permanently** move the HEAD and the current branch pointer to a previous commit:
+```bash
+git reset --soft/mixed/hard <commit-hash>
+```
+`soft`: Keeps the changes in the working directory and staging area (index).
+`mixed`: Keeps the changes in the working directory but clears the staging area (default behavior).
+`hard`: (Be Cautious!) Discards all changes in the working directory and staging area.
 
 ## Branching and Merging
 ### Create a New Branch
@@ -80,7 +102,8 @@ It adds a **reference** to a remote repository named `name`. This is typically u
 git push <remote_name> <branch_name> # It uploads your local commits to the remote repository.
 ```
 `remote_name`: The name of the remote repository to which you want to push your changes (default: `origin`).\
-`branch_name`: The name of the local branch you want to push to the remote repository.
+`branch_name`: The name of the local branch you want to push to the remote repository. 
+> Attention: Prior to Git version 2.28 (released in 2020), the default local branch was named `master`. However, remote default branch is `main`. One should use `git push origin master:main` to push local default branch to remote default branch.
 
 For the first push:
 ```bash
