@@ -34,7 +34,7 @@ git status # This shows the current status of your working directory and staging
 git add <file_name> # This adds changes to the staging area. 
 git add . # We can use . to add all changes.
 ```
-> The staging area (also known as the index) in Git is an intermediate area where changes are stored before they are committed to the repository. It acts as a preparatory zone where you can group changes together and decide what will be included in the next commit.
+> The **staging area** (also known as the **index**) in Git is an intermediate area where changes are stored before they are committed to the repository. It acts as a preparatory zone where you can group changes together and decide what will be included in the next commit.
 > When you make changes to files, they are initially tracked in the working directory. To include these changes in your next commit, you use the git add command, which moves them from the working directory to the staging area. Only the changes in the staging area are included in the next commit. This allows you to review and modify what you’re about to commit.
 
 ### Commit Changes
@@ -61,8 +61,8 @@ To **permanently** move the HEAD and the current branch pointer to a previous co
 ```bash
 git reset --soft/mixed/hard <commit-hash>
 ```
-`soft`: Keeps the changes in the working directory and staging area (index).
-`mixed`: Keeps the changes in the working directory but clears the staging area (default behavior).
+`soft`: Keeps the changes in the working directory and staging area (index).\
+`mixed`: Keeps the changes in the working directory but clears the staging area (default behavior).\
 `hard`: (Be Cautious!) Discards all changes in the working directory and staging area.
 
 ## Branching and Merging
