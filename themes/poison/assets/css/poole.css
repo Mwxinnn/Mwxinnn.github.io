@@ -84,25 +84,25 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 h3::before {
   content: "• "; /* Unicode bullet character */
   margin-left: 0rem;
   transform: translateY(-50%); /* Adjust vertical alignment */
-  font-size: 1.15rem; /* Match the font size of the h3 */
+  font-size: 1rem; /* Match the font size of the h3 */
   color: black; /* Bullet color */
 }
 h4, h5, h6 {
-  margin-left: 1.1rem;
+  margin-left: 0.8rem;
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -110,7 +110,7 @@ h4::before {
   content: "- "; /* Unicode bullet character */
   margin-left: 0rem;
   transform: translateY(-50%); /* Adjust vertical alignment */
-  font-size: 1rem; /* Match the font size of the h3 */
+  font-size: 0.8rem; /* Match the font size of the h3 */
   color: black; /* Bullet color */
 }
 
@@ -302,8 +302,13 @@ img {
  */
 
 .page,
+.content,
 .post {
+  font-size: large;
   margin-bottom: 4em;
+}
+.content,.post > p{
+  margin-bottom: 0.5%;
 }
 
 /* Blog post or page title */

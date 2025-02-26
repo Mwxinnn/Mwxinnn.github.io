@@ -7,8 +7,8 @@ theme = 'poison'
 [params]
 brand = "Wenxin Ma"
 # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-brand_image = "/pic/profile.jpg" # path to the image shown in the sidebar
-description = "👸 in tech. Master's Student in USTC."  # Used as default meta description if not specified in front matter
+brand_image = "/pic/profile.png" # path to the image shown in the sidebar
+description = "👸 in tech."  # Used as default meta description if not specified in front matter
 dark_mode = true                 # optional - defaults to false
 favicon = "/pic/favicon.png"     # path to favicon (defaults to favicon.png)
 listmonk = false
@@ -23,16 +23,17 @@ listmonk = false
 # Limit:        If the files should be listed, how many should be shown.
 menu = [
     { Name = "About Me", URL = "/about/", Pre = "💅 Little Self-Introduction", HasChildren = true, Limit = 5 },
-    { Name = "Tips", URL = "/tips/", Pre = "🖊️ Little Tips and Reminders", HasChildren = false },
+    # { Name = "Details", URL = "/details/", HasChildren = true, Limit = 3 },
+    { Name = "Tips", URL = "/tips/", Pre = "🖊️ Little Tips and Reminders (Learn! Remember! And Learn!)", HasChildren = false },
     # {Name = "Lectures", URL = "/posts/Lectures", Pre = "Recent", HasChildren = true, Limit = 5},
 ]
 
 # Links to your socials.  Comment or delete any you don't need/use. 
 # discord_url = "https://discord.com"
-email_url = "mailto://wxma@mail.ustc.edu.cn"
+email_url = "mailto://mwxisj@gmail.com"
 # facebook_url = "https://facebook.com"
 # flickr_url = "https://flickr.com"
-github_url = "https://github.com"
+github_url = "https://github.com/Mwxinnn"
 # gitlab_url = "https://gitlab.com"
 instagram_url = "https://instagram.com"
 # linkedin_url = "https://linkedin.com"
@@ -106,3 +107,6 @@ text_color_dark = "#EEE"                     # default is #EEE
 [taxonomies]
 series = 'series'
 tags = 'tags'
+
+[markup.goldmark.renderer]
+unsafe = true
