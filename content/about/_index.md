@@ -15,7 +15,9 @@ layout: single
 ---
 ## 🔔 News
 
+<div class="news">
 {{% include "../details/News.md" %}}
+</div>
 
 ---
 ## 📖 Publications

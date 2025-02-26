@@ -307,8 +307,8 @@ img {
   font-size: large;
   margin-bottom: 4em;
 }
-.content,.post > p{
-  margin-bottom: 0.5%;
+.content > p{
+  margin-bottom: 0.2rem;
 }
 
 /* Blog post or page title */
