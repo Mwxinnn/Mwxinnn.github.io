@@ -9,6 +9,7 @@ layout: single
     font-size:17px;
 }
 </style>
+\[Feb 2025\] 🎉 A paper is accepted by CVPR2025!
 
 \[Feb 2025\] 🎉 A [paper](https://www.arxiv.org/abs/2502.08347) is available on arxiv!
 
