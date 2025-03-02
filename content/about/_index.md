@@ -6,7 +6,7 @@ layout: single
  I'm a master student in Suzhou Institute for Advanced Research, University of Science and Technology of China, advised by [S.Kevin Zhou](https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en).
  Previously, I received my bachelor’s degree from Zhiyuan Honored Program, Shanghai Jiao Tong University. 
  
- My research focuses on **Vision Language Model**, and **Representation Learning**, especially in medical applications.
+ My research focuses on **Vision Language Model** and **Outlier Detection**.
 
 > 🥹 Currently seeking for summer internship oppotunies in 2025!
  
