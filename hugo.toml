@@ -5,10 +5,10 @@ theme = 'poison'
 # pluralizelisttitles = false
 
 [params]
-brand = "Wenxin Ma"
+brand = "Wenxin Ma 马雯芯"
 # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
 brand_image = "/pic/profile.png" # path to the image shown in the sidebar
-description = "👸 in tech."  # Used as default meta description if not specified in front matter
+description = "👸 in tech aiming to make a little difference."  # Used as default meta description if not specified in front matter
 dark_mode = true                 # optional - defaults to false
 favicon = "/pic/favicon.png"     # path to favicon (defaults to favicon.png)
 listmonk = false
@@ -35,8 +35,8 @@ email_url = "mailto://mwxisj@gmail.com"
 # flickr_url = "https://flickr.com"
 github_url = "https://github.com/Mwxinnn"
 # gitlab_url = "https://gitlab.com"
-instagram_url = "https://instagram.com"
-# linkedin_url = "https://linkedin.com"
+instagram_url = "https://https://www.instagram.com/jlog.cn?igsh=MTQxZG5zYWRnMXhicw%3D%3D&utm_source=qr"
+linkedin_url = "https://www.linkedin.com/in/wenxin-ma-a5760b207"
 # mastodon_url = "https://mastodon.social"
 # matrix_url = "https://matrix.org"
 # telegram_url = "https://telegram.org"

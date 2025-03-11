@@ -37,6 +37,30 @@ layout: single
 
 <div class="paper-entry">
     <div class="left-section">
+        <b>AA-CLIP: Enhancing Zero-shot Anomaly Detection via Anomaly-Aware CLIP</b>
+        <br>
+        <a href="https://arxiv.org/abs/2503.06661" target="_blank">https://arxiv.org/abs/2503.06661</a>
+    </div>
+    <div class="right-section">CVPR 2025</div>
+<br/>
+</div>
+<p class="small-text"><b>Wenxin Ma</b>, Xu Zhang, Qingsong Yao, Fenghe Tang, Chenxu Wu, Yingtai Li, Rui Yan, Zihang Jiang*, S. Kevin Zhou*</p>
+
+
+<div class="paper-entry">
+    <div class="left-section">
+        <b>Towards Accurate Unified Anomaly Segmentation</b>
+        <br>
+        <a href="https://arxiv.org/abs/2501.12295" target="_blank">https://arxiv.org/abs/2501.12295</a>
+    </div>
+    <div class="right-section">WACV2025 Oral</div>
+<br/>
+</div>
+<p class="small-text"><b>Wenxin Ma</b>, Qingsong Yao, Xiang Zhang, Zhelong Huang, Zihang Jiang*, S. Kevin Zhou*</p>
+	
+
+<div class="paper-entry">
+    <div class="left-section">
         <b>Hi-End-MAE: Hierarchical encoder-driven masked autoencoders are stronger vision learners for medical image segmentation</b>
         <br>
         <a href="https://arxiv.org/abs/2502.08347" target="_blank">https://arxiv.org/abs/2502.08347</a>
@@ -45,16 +69,4 @@ layout: single
 <br/>
 </div>
 <p class="small-text">Fenghe Tang, Qingsong Yao, <b>Wenxin Ma</b>, Chenxu Wu, Zihang Jiang*, S. Kevin Zhou*</p>
-
-
-<div class="paper-entry">
-    <div class="left-section">
-        <b>Towards Accurate Unified Anomaly Detection</b>
-        <br>
-        <a href="https://arxiv.org/abs/2501.12295" target="_blank">https://arxiv.org/abs/2501.12295</a>
-    </div>
-    <div class="right-section">WACV2025 Oral</div>
-<br/>
-</div>
-<p class="small-text"><b>Wenxin Ma</b>, Qingsong Yao, Xiang Zhang, Zhelong Huang, Zihang Jiang*, S. Kevin Zhou*</p>
 

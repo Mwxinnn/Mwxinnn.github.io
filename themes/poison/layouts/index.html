@@ -1,8 +1,13 @@
+<script>
+    window.location.href = "/about";
+</script>
+<!-- 
 {{ define "main" -}}
-    {{ with .GetPage `about.md` }}
+    {{ with .Site.GetPage "section" "/about" }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     {{ end }}
+    
 <div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
@@ -22,4 +27,4 @@
     {{- end }}
 </div>
 {{ partial "pagination.html" . }}
-{{- end }}
+{{- end }} -->
