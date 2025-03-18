@@ -99,20 +99,6 @@ pre {
   }
 }
 
-@media (max-width: 48em) {
-  .sidebar-sticky>*:not(nav):not(.light-dark) {
-    display: none;
-    /* 隐藏目录之外的所有元素 */
-  }
-
-  .sidebar-sticky>nav {
-    display: block;
-    font-size: 1rem;
-    top: 0;
-    transform: translate(0px, -20px);
-  }
-}
-
 /* Sidebar links */
 .sidebar a,
 li {
