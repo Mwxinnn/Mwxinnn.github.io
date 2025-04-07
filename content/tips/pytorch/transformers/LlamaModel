@@ -1,0 +1,8 @@
+---
+title: LlamaModel
+layout: single
+date: 2025-03-25
+priority: 1
+---
+## RoPE
+RoPE is implemented in class ``LlamaRotaryEmbedding`` from ``LlamaModel.py``. It needs ``x`` and ``position_ids``(identifies the position index of each token) as input.

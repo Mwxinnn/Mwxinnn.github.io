@@ -67,3 +67,9 @@ The generation process of VQ-VAE requires a PixelCNN to auto-regressively predic
 ![](VQ-VAE-2.png)
 ![](VQ-VAE-2-code.png)
 Multi-level (2 levels) features are considered in VQ-VAE 2. Higher level features are learned, because there are less information to quantize. Then, the learned codebook is considered as a condition for learning lower level features. The prior sampling model is trained on two levels too.
+
+## DALL$\cdot$E
+DALLE combines VQ-VQE2 with transformers. It contains two stages:
+- First, the dVAE compresses images into a sequence of discrete image tokens, following the pipeline of VQ-VAE2 (with a larger codebook containing 819 tokens).
+- Then, a 12B GPT-based transformer is trained as the prior to model the joint distribution of these image tokens and textual tokens from the input prompt. The textual tokens are concatenated with image tokens to ensure consistency.
+![](DALLE.png)
