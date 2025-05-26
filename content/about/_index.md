@@ -30,7 +30,14 @@ I am a second-year Master’s student at the **University of Science and Technol
 
 ## 📖 Publications
 
-{{% include "../details/Publications.md" %}}
+{{% include "../details/Publications.html" %}}
+
+---
+
+## 📖 Professional Services
+
+Journal Reviewer:
+- Medical Image Analysis
 
 ---
 
