@@ -30,6 +30,8 @@ I am a second-year Master’s student at the **University of Science and Technol
 
 ## 📖 Publications
 
+> *: corresponding author; &: co-first author
+
 {{% include "../details/Publications.html" %}}
 
 ---
