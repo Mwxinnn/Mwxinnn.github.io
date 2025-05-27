@@ -9,7 +9,7 @@ layout: single
     font-size:17px;
 }
 </style>
-\[May 2025\] 🎉 A [paper](https://arxiv.org/abs/2503.06661) is accepted by **ACL2025** (Findings)!
+\[May 2025\] 🎉 A [paper](https://arxiv.org/abs/2505.18708) is accepted by **ACL2025** (Findings)!
 
 \[April 2025\] 🎤 Gave a talk at [CSIG Wuhan Member Activity Center 'Donghu Forum' Frontier Paper Sharing Session](https://mp.weixin.qq.com/s/opOMTAN2s7kLVwVaNfwAfg)!
 
