@@ -2,9 +2,12 @@
 title: 🔔 Pubs
 layout: single
 ---
+Currently, I focus on developing scalable, plausible, and 4D-aware representations to enhance the performance and reliability of AI applications, with an emphasis on: 
 
- As a researcher beginning my academic journey, I have investigated multiple facets of AI, with applications both in general domains and in medicine:
-  - **VLM 3D reasoning tasks**—specifically, how these models perceive, represent, and reason about spatial relationships in three-dimensional environments. My goal is to design novel interaction pipelines that improve cross-modal spatial understanding.
-  - **Efficient and Robust Methods** to enable efficient training and robust inference. For example, I interest in a label-efficient application - **Anomaly Detection** - with high accuracy ([WACV25'](https://arxiv.org/abs/2501.12295)) and high generalization ability ([CVPR25'](https://arxiv.org/abs/2503.06661)).
-  - **Medical Image Analysis** for computer-aided diagnosis to improve clinical efficiency and decision-making. I focus on developing accurate, interpretable, and data-efficient models for tasks such as disease classification ([ACL25'](https://arxiv.org/abs/2505.18708)), segmentation ([MICCAI25'](https://arxiv.org/abs/2506.18034)), and prognosis prediction. 
+(1) Reformulating input representations so that MLLMs can more effectively interpret the multimodal signals. 
+
+(2) Strengthening learned representations in MLLMs through world-modeling engines with temporal
+consistency and causal plausibility to enhance downstream reasoning.
+
+I have experiences leading both **Computer Vision** projects and **Medical Image Analysis** projects.
 
