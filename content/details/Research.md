@@ -1,13 +1,10 @@
 ---
-title: 🔔 Pubs
+title: Research interests
 layout: single
 ---
-Currently, I focus on developing scalable, plausible, and 4D-aware representations to enhance the performance and reliability of AI applications, with an emphasis on: 
 
-(1) Reformulating input representations so that MLLMs can more effectively interpret the multimodal signals. 
+I am interested in how AI agents actively explore their environments, gather useful information, and reason about how the world changes over time. My research focuses on:
 
-(2) Strengthening learned representations in MLLMs through world-modeling engines with temporal
-consistency and causal plausibility to enhance downstream reasoning.
-
-I have experiences leading both **Computer Vision** projects and **Medical Image Analysis** projects.
-
+- **Active exploration:** enabling agents to choose actions and observations that reduce uncertainty and build a better understanding of their environments.
+- **Spatial and temporal reasoning:** learning representations that capture 3D structure, remain consistent over time, and support plausible cause-and-effect reasoning.
+- **Medical image analysis and anomaly detection:** developing representations that help identify unusual patterns and support image segmentation.

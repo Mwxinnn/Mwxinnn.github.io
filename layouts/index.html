@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ with .Site.GetPage "/about" }}
+<article class="profile-page">{{ .Content }}</article>
+{{ end }}
+{{ end }}

@@ -12,4 +12,4 @@ layout: single
 ---
 # 📖 Publications
 
-{{% include "Publications.md" %}}
+{{% include "Publications.html" %}}

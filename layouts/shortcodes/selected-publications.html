@@ -1,0 +1,10 @@
+{{- $source := .Site.GetPage "/details/publications" -}}
+{{- $html := $source.Content -}}
+{{- /* The complete bibliography is the single source of truth. Keep all leading
+      works and only explicitly selected collaborations on the homepage. */ -}}
+{{- $html = replaceRE `(?s)<article class="publication collaboration-publication">.*?</article>` "" $html -}}
+{{- /* Remove year labels left without articles after selection. */ -}}
+{{- $html = replaceRE `(?s)<p class="publication-year">[0-9]+</p>\s*</section>` "</section>" $html -}}
+{{- $count := len (findRE `data-selected="true"` $html) -}}
+{{- $html = replaceRE `(Participated works <span>)[0-9]+(</span>)` (printf "${1}%02d${2}" $count) $html -}}
+{{- $html | safeHTML -}}
